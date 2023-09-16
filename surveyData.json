@@ -1,0 +1,208 @@
+{
+    "surveyName": "Planting for food and jobs project",
+    "surveyDescription": "This is a test form",
+    "isPublished": true,
+    "isDeleted": false,
+    "totalQuestions": 4,
+    "surveyQuestionFields": [
+        {
+            "id": "b3c060e3-f2bd-4106-892a-6cac3d1ad634",
+            "name": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+            "type": "radio",
+            "is_required": false,
+            "question_text": "Do you have a farm?",
+            "is_published": false,
+            "description": "",
+            "options": [
+                {
+                    "id": "a4c9f391-989f-43fb-b8de-a19ddbf709b2",
+                    "value": "No",
+                    "is_deleted": false
+                },
+                {
+                    "id": "e8663e79-a838-4ad5-a826-fe0269cd38a1",
+                    "value": "Yes",
+                    "is_deleted": false
+                }
+            ],
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": []
+            },
+            "total_questions_with_template": 4,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "Do you have a farm?",
+            "questionType": "radio",
+            "skipLogic": {
+                "rules": []
+            }
+        },
+        {
+            "id": "dce709c1-d79c-46e2-a2b2-708ee96a4fcd",
+            "name": "question-0b8b6d9d-7fed-49ec-8c56-a27ae15f5cee",
+            "type": "shortAnswer",
+            "is_required": false,
+            "question_text": "What is your name?",
+            "is_published": false,
+            "description": "",
+            "options": null,
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": []
+            },
+            "total_questions_with_template": 4,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "What is your name?",
+            "questionType": "shortAnswer",
+            "skipLogic": {
+                "rules": []
+            }
+        },
+        {
+            "id": "8435863a-e620-4e4f-a4b2-7d112f2b5f91",
+            "name": "question-a3a5bfef-5b4c-4037-87e2-54802a77694c",
+            "type": "selectField",
+            "is_required": false,
+            "question_text": "What crops do you farm?",
+            "is_published": false,
+            "description": "",
+            "options": [
+                {
+                    "id": "b7805071-a494-4dd1-a8d8-d67fd20a1358",
+                    "value": "Maiz",
+                    "is_deleted": false
+                },
+                {
+                    "id": "8d95c8d1-a607-4419-9d34-52ae2ffb73af",
+                    "value": "Cocoa",
+                    "is_deleted": false
+                },
+                {
+                    "id": "588deb6c-d95c-40fb-ad89-3fa97a848336",
+                    "value": "Cassava",
+                    "is_deleted": false
+                }
+            ],
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": [
+                    {
+                        "id": "444806a5-8b3b-494c-b02a-0dee5f8927b6",
+                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "comparison_type": "equals",
+                        "consequent": "no",
+                        "is_deleted": false,
+                        "form_id": "",
+                        "form_template_id": "",
+                        "user_id": ""
+                    }
+                ]
+            },
+            "total_questions_with_template": 4,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "What crops do you farm?",
+            "questionType": "selectField",
+            "skipLogic": {
+                "rules": [
+                    {
+                        "id": "444806a5-8b3b-494c-b02a-0dee5f8927b6",
+                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "comparison_type": "equals",
+                        "consequent": "no",
+                        "is_deleted": false,
+                        "form_id": "",
+                        "form_template_id": "",
+                        "user_id": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1cd6d798-f8c9-4579-b1e5-1ce839f8d9ce",
+            "name": "question-622d3dfa-a390-48e3-9dbe-cd055a6d7cb6",
+            "type": "shortAnswer",
+            "is_required": false,
+            "question_text": "What do you do?",
+            "is_published": false,
+            "description": "",
+            "options": null,
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": [
+                    {
+                        "id": "98a75ae7-fd8e-48ec-bc95-e173386e1144",
+                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "comparison_type": "equals",
+                        "consequent": "yes",
+                        "is_deleted": false,
+                        "form_id": "",
+                        "form_template_id": "",
+                        "user_id": ""
+                    }
+                ]
+            },
+            "total_questions_with_template": 4,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "What do you do?",
+            "questionType": "shortAnswer",
+            "skipLogic": {
+                "rules": [
+                    {
+                        "id": "98a75ae7-fd8e-48ec-bc95-e173386e1144",
+                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "comparison_type": "equals",
+                        "consequent": "yes",
+                        "is_deleted": false,
+                        "form_id": "",
+                        "form_template_id": "",
+                        "user_id": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
