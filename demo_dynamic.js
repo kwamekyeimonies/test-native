@@ -31,9 +31,22 @@ const SurveyComponent = ({ payload }) => {
         displayChildQuestions(questionName, answer);
     };
 
-  
+
     const [parentOptionSelected, setParentOptionSelected] = useState(false);
 
+
+    // const handleParentQuestionChange = (parentQuestionName, answer) => {
+    //     setAnswers({
+    //         ...answers,
+    //         [parentQuestionName]: answer,
+    //     });
+
+    //     // Set the flag to true immediately when an option is selected
+    //     setParentOptionSelected(true);
+
+    //     // Trigger the function to display child questions with a delay (if needed)
+    //     displayChildQuestions(parentQuestionName, answer);
+    // };
 
     const handleParentQuestionChange = (parentQuestionName, answer) => {
         setAnswers({
@@ -41,19 +54,11 @@ const SurveyComponent = ({ payload }) => {
             [parentQuestionName]: answer,
         });
 
-        // Set the flag to true immediately when an option is selected
-        setParentOptionSelected(true);
-
-        // Trigger the function to display child questions with a delay (if needed)
+        // Always trigger the function to display child questions immediately
         displayChildQuestions(parentQuestionName, answer);
     };
 
     const displayChildQuestions = (parentQuestionName, parentAnswer) => {
-        // Only render child questions if a parent option has been selected
-        if (!parentOptionSelected) {
-            return;
-        }
-
         const updatedQuestions = payload.surveyQuestionFields.map(question => {
             if (!question.skip_logic || question.skip_logic.rules.length === 0) {
                 // This is a parent question (no skip logic rules)
