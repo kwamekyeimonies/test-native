@@ -1,24 +1,14 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import DynamicForm from './DynamicForm';
+import surveyData from "./surveyData.json"
+import SurveyComponent from './demo_dynamic';
 
-const questions = [
-  {
-    question: 'Question 1',
-  },
-  {
-    question: 'Question 2',
-  },
-  {
-    question: 'Question 3',
-  },
-  // Add more questions here
-];
+
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <DynamicForm questions={questions} />
+      <SurveyComponent payload={surveyData} />
     </View>
   );
 };

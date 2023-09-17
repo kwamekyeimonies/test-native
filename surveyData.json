@@ -3,54 +3,11 @@
     "surveyDescription": "This is a test form",
     "isPublished": true,
     "isDeleted": false,
-    "totalQuestions": 4,
+    "totalQuestions": 5,
     "surveyQuestionFields": [
         {
-            "id": "b3c060e3-f2bd-4106-892a-6cac3d1ad634",
-            "name": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
-            "type": "radio",
-            "is_required": false,
-            "question_text": "Do you have a farm?",
-            "is_published": false,
-            "description": "",
-            "options": [
-                {
-                    "id": "a4c9f391-989f-43fb-b8de-a19ddbf709b2",
-                    "value": "No",
-                    "is_deleted": false
-                },
-                {
-                    "id": "e8663e79-a838-4ad5-a826-fe0269cd38a1",
-                    "value": "Yes",
-                    "is_deleted": false
-                }
-            ],
-            "image": {
-                "id": "",
-                "file_type": "",
-                "name": "",
-                "path": "",
-                "file_header": null,
-                "is_deleted": false
-            },
-            "file_types": null,
-            "files": null,
-            "is_deleted": false,
-            "skip_logic": {
-                "rules": []
-            },
-            "total_questions_with_template": 4,
-            "isRequired": false,
-            "fileTypes": null,
-            "questionText": "Do you have a farm?",
-            "questionType": "radio",
-            "skipLogic": {
-                "rules": []
-            }
-        },
-        {
-            "id": "dce709c1-d79c-46e2-a2b2-708ee96a4fcd",
-            "name": "question-0b8b6d9d-7fed-49ec-8c56-a27ae15f5cee",
+            "id": "75fdecca-fb52-4246-8c44-bef054bab904",
+            "name": "question-7225e9a2-e382-4692-a854-84afcc49fbf7",
             "type": "shortAnswer",
             "is_required": false,
             "question_text": "What is your name?",
@@ -71,7 +28,7 @@
             "skip_logic": {
                 "rules": []
             },
-            "total_questions_with_template": 4,
+            "total_questions_with_template": 5,
             "isRequired": false,
             "fileTypes": null,
             "questionText": "What is your name?",
@@ -81,27 +38,70 @@
             }
         },
         {
-            "id": "8435863a-e620-4e4f-a4b2-7d112f2b5f91",
-            "name": "question-a3a5bfef-5b4c-4037-87e2-54802a77694c",
-            "type": "selectField",
+            "id": "90edf596-8789-4dfc-b7f2-3afeaacb9c4d",
+            "name": "question-748eca8d-427b-4915-86e0-40cbfe288c3b",
+            "type": "radio",
             "is_required": false,
-            "question_text": "What crops do you farm?",
+            "question_text": "Do you have a farm?",
             "is_published": false,
             "description": "",
             "options": [
                 {
-                    "id": "b7805071-a494-4dd1-a8d8-d67fd20a1358",
-                    "value": "Maiz",
+                    "id": "a7f29bd0-e031-464a-a6c6-ca0b2da361c4",
+                    "value": "Yes",
                     "is_deleted": false
                 },
                 {
-                    "id": "8d95c8d1-a607-4419-9d34-52ae2ffb73af",
+                    "id": "5456f118-a7f6-4a8b-961e-f3d0ba15f951",
+                    "value": "No",
+                    "is_deleted": false
+                }
+            ],
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": []
+            },
+            "total_questions_with_template": 5,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "Do you have a farm?",
+            "questionType": "radio",
+            "skipLogic": {
+                "rules": []
+            }
+        },
+        {
+            "id": "b5d824e2-9d53-47f5-a6c8-46429408c0f3",
+            "name": "question-4bac302f-93b5-497f-b1fa-94860f68c176",
+            "type": "checkbox",
+            "is_required": false,
+            "question_text": "What crops do you produce?",
+            "is_published": false,
+            "description": "",
+            "options": [
+                {
+                    "id": "1f350168-442a-4561-8854-987c5a5ee428",
+                    "value": "Maize",
+                    "is_deleted": false
+                },
+                {
+                    "id": "c9d1c715-3742-424c-9fe0-a340caf90f7f",
                     "value": "Cocoa",
                     "is_deleted": false
                 },
                 {
-                    "id": "588deb6c-d95c-40fb-ad89-3fa97a848336",
-                    "value": "Cassava",
+                    "id": "3971dd31-a870-40e8-bedb-fd485d80dd8c",
+                    "value": "Yam",
                     "is_deleted": false
                 }
             ],
@@ -119,8 +119,8 @@
             "skip_logic": {
                 "rules": [
                     {
-                        "id": "444806a5-8b3b-494c-b02a-0dee5f8927b6",
-                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "id": "d27e0103-0b6e-4507-9f9f-f2c55b7eac77",
+                        "antecedent": "question-748eca8d-427b-4915-86e0-40cbfe288c3b",
                         "comparison_type": "equals",
                         "consequent": "no",
                         "is_deleted": false,
@@ -130,16 +130,16 @@
                     }
                 ]
             },
-            "total_questions_with_template": 4,
+            "total_questions_with_template": 5,
             "isRequired": false,
             "fileTypes": null,
-            "questionText": "What crops do you farm?",
-            "questionType": "selectField",
+            "questionText": "What crops do you produce?",
+            "questionType": "checkbox",
             "skipLogic": {
                 "rules": [
                     {
-                        "id": "444806a5-8b3b-494c-b02a-0dee5f8927b6",
-                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "id": "d27e0103-0b6e-4507-9f9f-f2c55b7eac77",
+                        "antecedent": "question-748eca8d-427b-4915-86e0-40cbfe288c3b",
                         "comparison_type": "equals",
                         "consequent": "no",
                         "is_deleted": false,
@@ -151,11 +151,11 @@
             }
         },
         {
-            "id": "1cd6d798-f8c9-4579-b1e5-1ce839f8d9ce",
-            "name": "question-622d3dfa-a390-48e3-9dbe-cd055a6d7cb6",
+            "id": "0ff8ca10-b6d4-48c9-b3a5-a34cae3d459c",
+            "name": "question-0aebeb13-e0ce-424a-b146-d767f79bfff8",
             "type": "shortAnswer",
             "is_required": false,
-            "question_text": "What do you do?",
+            "question_text": "What do you do then?",
             "is_published": false,
             "description": "",
             "options": null,
@@ -173,8 +173,8 @@
             "skip_logic": {
                 "rules": [
                     {
-                        "id": "98a75ae7-fd8e-48ec-bc95-e173386e1144",
-                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "id": "e4041c1c-b771-4b10-8164-96d60306eb16",
+                        "antecedent": "question-748eca8d-427b-4915-86e0-40cbfe288c3b",
                         "comparison_type": "equals",
                         "consequent": "yes",
                         "is_deleted": false,
@@ -184,16 +184,16 @@
                     }
                 ]
             },
-            "total_questions_with_template": 4,
+            "total_questions_with_template": 5,
             "isRequired": false,
             "fileTypes": null,
-            "questionText": "What do you do?",
+            "questionText": "What do you do then?",
             "questionType": "shortAnswer",
             "skipLogic": {
                 "rules": [
                     {
-                        "id": "98a75ae7-fd8e-48ec-bc95-e173386e1144",
-                        "antecedent": "question-7a6f97bc-4a3d-43c9-a887-e44e1e04d44d",
+                        "id": "e4041c1c-b771-4b10-8164-96d60306eb16",
+                        "antecedent": "question-748eca8d-427b-4915-86e0-40cbfe288c3b",
                         "comparison_type": "equals",
                         "consequent": "yes",
                         "is_deleted": false,
@@ -202,6 +202,38 @@
                         "user_id": ""
                     }
                 ]
+            }
+        },
+        {
+            "id": "99a41c7e-a41d-4d33-83cd-8daeeda06ba1",
+            "name": "question-94a5be51-3761-4853-84d2-7c5a5a20ef4d",
+            "type": "paragraph",
+            "is_required": false,
+            "question_text": "How would you want your parcel",
+            "is_published": false,
+            "description": "",
+            "options": null,
+            "image": {
+                "id": "",
+                "file_type": "",
+                "name": "",
+                "path": "",
+                "file_header": null,
+                "is_deleted": false
+            },
+            "file_types": null,
+            "files": null,
+            "is_deleted": false,
+            "skip_logic": {
+                "rules": []
+            },
+            "total_questions_with_template": 5,
+            "isRequired": false,
+            "fileTypes": null,
+            "questionText": "How would you want your parcel",
+            "questionType": "paragraph",
+            "skipLogic": {
+                "rules": []
             }
         }
     ]
