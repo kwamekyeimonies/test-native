@@ -26,11 +26,7 @@ const SurveyComponent = ({ payload }) => {
             ...answers,
             [questionName]: answer,
         });
-
-        // Trigger the function to display child questions
-        displayChildQuestions(questionName, answer);
     };
-
 
     const [parentOptionSelected, setParentOptionSelected] = useState(false);
 
@@ -89,13 +85,23 @@ const SurveyComponent = ({ payload }) => {
                         // Show or hide based on the rule and optionMatches
                         return {
                             ...question,
-                            isHidden: !(answerMatches || optionMatches),
+                            isHidden: answerMatches || optionMatches,
+                        };
+                    } else if (question.type === 'selectField') {
+                        // Check if this is a child question with a list of options
+                        const isChildWithOptions = question.options && question.options.length > 0;
+
+                        // Show or hide based on the rule and whether the parent option is selected,
+                        // but do not hide if it's a child with options and the parent option is selected
+                        return {
+                            ...question,
+                            isHidden: isChildWithOptions && !answerMatches,
                         };
                     } else {
                         // For other question types, show/hide based on the rule
                         return {
                             ...question,
-                            isHidden: !answerMatches,
+                            isHidden: answerMatches,
                         };
                     }
                 } else {
@@ -124,6 +130,8 @@ const SurveyComponent = ({ payload }) => {
 
         setQuestions(updatedQuestions);
     };
+
+
 
 
     return (
